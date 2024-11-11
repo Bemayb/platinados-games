@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Platinados Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Doto:wght@614&family=Kode+Mono:wght@400..700&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="CSS/Style1.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <div class="logo-search">
+          <div class="logo-img">
+            <img
+              src="Imagenes/platinados-logo.png"
+              alt="Platinados Logo"
+              class="logo-img"
+            />
+          </div>
+          <h1 class="letrakode-h1">Platinados Games</h1>
+        </div>
+      </div>
+    </header>
+    <article h2 class="letrakode-h1">Registro</article>
+    <form
+      action="PHP/formularios.php"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <input
+        type="text"
+        name="nombrecliente"
+        id="nombrecliente"
+        placeholder="nombrecliente"
+        required
+      /><br />
+      <input
+        type="text"
+        name="apellidocliente"
+        id="apellidocliente"
+        placeholder="apellidocliente"
+        required
+      /><br />
+      <input
+        type="date"
+        name="FechaNacimientoCliente"
+        id="FechaNacimientoCliente"
+        required
+      /><br />
+      <input
+        type="email"
+        name="emailcliente"
+        id="emailcliente"
+        required
+        placeholder="emailcliente"
+      /><br />
+      <select>
+        <option value="masculino">masculino</option>
+        <option value="Fem">Femenino</option>
+        <option value="Otros">Otros</option></select
+      ><br />
+      <input
+        type="tel"
+        name="telefonocliente"
+        id="telefonocliente"
+        placeholder="Ingrese Telefono"
+        required
+      /><br />
+      <input type="File" name="CelArcclinte" required /><br />
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
