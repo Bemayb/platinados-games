@@ -65,17 +65,20 @@ body {
 
 /* Navegación de juegos */
 .games-nav {
-    background-color: var(--sky-blue);
-    padding: 0 20px 10px;
+    background-color: #2c3e50;  /* Cambiamos a un azul oscuro */
+    padding: 10px 20px;
     display: flex;
     gap: 40px;
+    justify-content: center;  /* Centramos los enlaces */
 }
 
 .games-nav a {
-    color: var(--dark-text);
+    color: white;  /* contraste */
     text-decoration: none;
     font-size: 16px;
     font-family: var(--main-font);
+    padding: 5px 10px;
+    transition: all 0.3s ease;  /* Transición */
 }
 
 /* Hero Section */
@@ -323,18 +326,59 @@ body {
     font-size: 14px;
 }
 
+/* Sección de Eventos Mashup */
+.eventos-mashup {
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+}
+
+.eventos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.evento-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.evento-card:hover {
+    transform: translateY(-5px);
+}
+
+.evento-card a {
+    text-decoration: none;
+    color: var(--dark-text);
+}
+
+.evento-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.evento-card h3 {
+    padding: 15px 15px 5px 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.evento-card p {
+    padding: 0 15px 15px 15px;
+    color: #666;
+    font-size: 14px;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
-    .nav-container {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .search-input {
-        width: 100%;
-    }
-
-    .info-grid {
+    .eventos-grid {
         grid-template-columns: 1fr;
     }
 }
