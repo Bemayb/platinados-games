@@ -48,12 +48,12 @@ session_start();
 
       <nav class="games-nav">
         <a href="LoL.html">LoL</a>
-        <a href="#">Valorant</a>
-        <a href="#">Counter Strike</a>
-        <a href="#">R6</a>
-        <a href="#">FIFA</a>
-        <a href="#">Gears</a>
-        <a href="#">Halo</a>
+        <a href="Valorant.html">Valorant</a>
+        <a href="Counter.html">Counter Strike</a>
+        <a href="R6.html">R6</a>
+        <a href="FIFA.html">FIFA</a>
+        <a href="gears.html">Gears</a>
+        <a href="halo.html">Halo</a>
 
       </nav>
     </header>
@@ -98,7 +98,6 @@ session_start();
           <label for="radio5" class="manual-btn"></label>
         </div>
       </div>
-      <button class="discover-btn">Descubrir</button>
     </section>
     <main class="content-section">
       <section class="tutors">

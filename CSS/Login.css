@@ -104,3 +104,52 @@ button:hover {
     color: var(--dark-text);
     text-decoration: none;
 }
+
+/*Estilos game bar*/
+
+.game-content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.game-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.game-info {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.game-description {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.tutor-highlight {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 10px;
+}
+
+.tutor-highlight img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.game-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;  /* o el tamaño que desees */
+}
